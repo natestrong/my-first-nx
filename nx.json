@@ -28,6 +28,12 @@
     "twitter-client-e2e": {
       "tags": [],
       "implicitDependencies": ["twitter-client"]
+    },
+    "ui": {
+      "tags": []
+    },
+    "tweets": {
+      "tags": []
     }
   }
 }

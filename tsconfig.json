@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@my-first-nx/ui": ["libs/ui/src/index.ts"],
+      "@my-first-nx/tweets": ["libs/tweets/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
