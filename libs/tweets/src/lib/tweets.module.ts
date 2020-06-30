@@ -3,7 +3,7 @@ import {CommonModule} from '@angular/common';
 import {MaterialModule} from "@my-first-nx/material";
 
 @NgModule({
-  imports: [CommonModule, MaterialModule],
+  imports: [CommonModule],
 })
 export class TweetsModule {
 }
