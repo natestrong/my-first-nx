@@ -18,7 +18,8 @@
     "paths": {
       "@my-first-nx/ui": ["libs/ui/src/index.ts"],
       "@my-first-nx/tweets": ["libs/tweets/src/index.ts"],
-      "@my-first-nx/material": ["libs/material/src/index.ts"]
+      "@my-first-nx/material": ["libs/material/src/index.ts"],
+      "@my-first-nx/state": ["libs/state/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

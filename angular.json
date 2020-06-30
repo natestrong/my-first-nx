@@ -86,10 +86,7 @@
               "apps/twitter-client/tsconfig.app.json",
               "apps/twitter-client/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/twitter-client/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!apps/twitter-client/**/*"]
           }
         },
         "test": {
@@ -124,13 +121,8 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": [
-              "apps/twitter-client-e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**",
-              "!apps/twitter-client-e2e/**/*"
-            ]
+            "tsConfig": ["apps/twitter-client-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/twitter-client-e2e/**/*"]
           }
         }
       }
@@ -148,10 +140,7 @@
               "libs/ui/tsconfig.lib.json",
               "libs/ui/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/ui/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/ui/**/*"]
           }
         },
         "test": {
@@ -183,10 +172,7 @@
               "libs/tweets/tsconfig.lib.json",
               "libs/tweets/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/tweets/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/tweets/**/*"]
           }
         },
         "test": {
@@ -218,10 +204,7 @@
               "libs/material/tsconfig.lib.json",
               "libs/material/tsconfig.spec.json"
             ],
-            "exclude": [
-              "**/node_modules/**",
-              "!libs/material/**/*"
-            ]
+            "exclude": ["**/node_modules/**", "!libs/material/**/*"]
           }
         },
         "test": {
@@ -231,6 +214,38 @@
             "tsConfig": "libs/material/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/material/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "state": {
+      "projectType": "library",
+      "root": "libs/state",
+      "sourceRoot": "libs/state/src",
+      "prefix": "my-first-nx",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/state/tsconfig.lib.json",
+              "libs/state/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/state/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/state/jest.config.js",
+            "tsConfig": "libs/state/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/state/src/test-setup.ts"
           }
         }
       },
